@@ -40,12 +40,12 @@ Add a `.powder` file to specify the domain and subdomain to use with '.dev'.
 - Author makes changes or answers questions
 - When both are satisfied, Reviewer merges changes, and deletes branch
 
-### Tests
+## Testing
 
 All code is expected to have tests, and to have appropriate coverage.
 Acceptable coverage is determined by the review, generally expected to be highly covered.
 
-#### Frequently Used Gems:
+### Frequently Used Gems:
 `minitest-rails` for ruby/rails projects.
 `simplecov` for local test coverage
 `guard` for testing as you save changes.
@@ -53,7 +53,7 @@ Acceptable coverage is determined by the review, generally expected to be highly
 `mocha` for mocking, or just minitest mocks and stubs
 `webmock` for remote http calls, if necessary
 
-#### Frequently Used Services:
+### Frequently Used Services:
 `coveralls` for code coverage
 `travis` for testing
 `hound` to check styles
