@@ -32,7 +32,7 @@
 <td><a href='https://gemnasium.com/PRX/tower.radiotopia.fm'><img src="https://gemnasium.com/PRX/tower.radiotopia.fm.svg" alt="Dependency Status" /></a></a>
 </td>
 <td><a href='https://coveralls.io/r/PRX/tower.radiotopia.fm?branch=master'><img src='https://coveralls.io/repos/PRX/tower.radiotopia.fm/badge.svg?branch=master' alt='Coverage Status' /></a></td>
-<td><a href="https://travis-ci.org/PRX/tower.radiotopia.fm"> n/a <!--<img src="https://travis-ci.org/PRX/tower.radiotopia.fm.svg?branch=master" />--></a></td>
+<td> n/a <a href="https://travis-ci.org/PRX/tower.radiotopia.fm"><!--<img src="https://travis-ci.org/PRX/tower.radiotopia.fm.svg?branch=master" />--></a></td>
 <td><a href="https://codeclimate.com/github/PRX/tower.radiotopia.fm"><img src="https://codeclimate.com/github/PRX/tower.radiotopia.fm/badges/gpa.svg" /></a></td>
 </tr>
 
