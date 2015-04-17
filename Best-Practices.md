@@ -64,7 +64,8 @@ Acceptable coverage is determined by the review, generally expected to be highly
 ### Frequently Used Services:
 * `coveralls` for code coverage
 * `travis` for testing
-* `hound` to check styles
+* `hound` to check PRs
+* `code climate` to give overall style and coverage scores
 
 ## Integration Testing
 
