@@ -5,7 +5,7 @@ These are more subject to change and refinement than standards, but still should
 ## Process
 
 ### 1. Create a branch
-- Branches should be named using a `feat/` or `fix/` prefix
+- Branches should be named using a `feat/`, `fix/`, `chore/`, etc prefix
 - After the prefix, add a short unique name all lower case and underscores
 - The name should be descriptive of the changes
 
