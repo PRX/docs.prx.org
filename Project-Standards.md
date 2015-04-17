@@ -26,7 +26,10 @@ The following is also required for a web project README.md:
 - Integrations and/or dependencies
 - Usage
 - License
+  - use MIT for gems
+  - use AGPL for applications and services
 - Contributing, includes reassignment of copyright
+  - (TBD) boilerplate language that contributing a PR also transfers ownership of code
 
 # Services
 
