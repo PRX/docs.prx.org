@@ -69,3 +69,22 @@ There are several libraries to help with this:
 - For JSON (de)serializing, use the `roar` gem
 - (TBD) For representers, use the PRX mixins for embedding and caching
 - (TBD) For controllers, use the PRX mixins for HAL actions
+
+## Running in Production
+
+### Deployment
+
+Deployment or production should be possible using a single command.
+
+Most applications are deployed using `capistrano`, though we also `chef` and are experimenting with `docker` on various platforms.
+
+
+### Monitoring
+
+We use NewRelic for application monitoring, included using the following gems:
+```
+gem 'newrelic_rpm'
+gem 'capistrano-newrelic'
+```
+
+A `newrelic.yml` config file should also be included specifying PRX's NewRelic API key.
