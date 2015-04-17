@@ -43,7 +43,7 @@ Use the `id.prx.org` for user authentication.
 It has the ability to provide plain embeddable iframes, and to skip some interactions for PRX specific sites.
 
 Use the `rack_prx-auth` gem for token based API authentication.
-Tokens also include
+Tokens also include information about the scopes and account(s) accessible by this token.
 
 Use the `pundit` gem for authorization.
 Rules can rely on user and account information provided by `id.prx.org` in both responses and tokens.
