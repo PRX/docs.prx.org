@@ -40,6 +40,12 @@ Add a `.powder` file to specify the domain and subdomain to use with '.dev'.
 - Author makes changes or answers questions
 - When both are satisfied, Reviewer merges changes, and deletes branch
 
+### Upgrades
+
+Gems should be added and updated as needed as part of authoring a PR.
+
+In general, larger updates, such as to Rails, should be made as their own PRs.
+
 ## Testing
 
 All code is expected to have tests, and to have appropriate coverage.
@@ -57,9 +63,3 @@ Acceptable coverage is determined by the review, generally expected to be highly
 `coveralls` for code coverage
 `travis` for testing
 `hound` to check styles
-
-### Upgrades
-
-Gems should be added and updated as needed as part of authoring a PR.
-
-In general, larger updates, such as to Rails, should be made as their own PRs.
