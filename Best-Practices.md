@@ -2,12 +2,6 @@ These are more subject to change and refinement than standards, but still should
 
 ## Development
 
-### Running Locally
-
-We use pow to run web applications and services locally.
-This defaults to using the '.dev' TLD for locally running projects.
-Add a `.powder` file to specify the domain and subdomain to use with '.dev'.
-
 ### Process
 
 1) Create a branch
@@ -39,6 +33,12 @@ Add a `.powder` file to specify the domain and subdomain to use with '.dev'.
 - Reviewer reads the changes, comments on issues or questions
 - Author makes changes or answers questions
 - When both are satisfied, Reviewer merges changes, and deletes branch
+
+### Running Locally
+
+We use pow to run web applications and services locally.
+This defaults to using the '.dev' TLD for locally running projects.
+Add a `.powder` file to specify the domain and subdomain to use with '.dev'.
 
 ### Upgrades
 
