@@ -35,7 +35,7 @@ The following is also required for a web project README.md:
 
 ## Ruby Version
 
-Specify the version of ruby used for the project using a `.ruby-version` file.
+Specify the version of ruby used for the project using a `.ruby-version` file. The version specified should **exactly match** the version used for the project in production.
 
 ## Authentication and Authorization
 
