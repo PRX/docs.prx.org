@@ -1,10 +1,10 @@
 These are more subject to change and refinement than standards, but still should be followed when appropriate.
 
-## Development
+# Development
 
-### Process
+## Process
 
-1) Create a branch
+### 1) Create a branch
 - Branches should be named using a `feat/` or `fix/` prefix
 - After the prefix, add a short unique name all lower case and underscores
 - The name should be descriptive of the changes
@@ -46,20 +46,22 @@ Gems should be added and updated as needed as part of authoring a PR.
 
 In general, larger updates, such as to Rails, should be made as their own PRs.
 
-## Testing
+# Testing
 
 All code is expected to have tests, and to have appropriate coverage.
 Acceptable coverage is determined by the review, generally expected to be highly covered.
 
+## Tools
+
 ### Frequently Used Gems:
-`minitest-rails` for ruby/rails projects.
-`simplecov` for local test coverage
-`guard` for testing as you save changes.
-`factory-girl` for test data factories
-`mocha` for mocking, or just minitest mocks and stubs
-`webmock` for remote http calls, if necessary
+* `minitest-rails` for ruby/rails projects.
+* `simplecov` for local test coverage
+* `guard` for testing as you save changes.
+* `factory-girl` for test data factories
+* `mocha` for mocking, or just minitest mocks and stubs
+* `webmock` for remote http calls, if necessary
 
 ### Frequently Used Services:
-`coveralls` for code coverage
-`travis` for testing
-`hound` to check styles
+* `coveralls` for code coverage
+* `travis` for testing
+* `hound` to check styles
