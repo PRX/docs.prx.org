@@ -48,6 +48,7 @@ Rules can rely on user and account information provided by `id.prx.org` in both 
 ## Private Data and Secrets
 
 - Use `dotenv-rails` to specify keys and other private data in an `.env` file
+- Provide an `env-example` file with all environment variables listed but unassigned
 - Add `.env*` to the .gitignore
 
 
