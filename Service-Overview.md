@@ -46,4 +46,10 @@ Subauto encompasses services provided by several other applications. Billing and
 
 # Feeder
 
+Feeder extends the ability of **cms.prx.org** to provide support for podcast-specific metadata, as well as generates podcast feeds for podcast versions of *series* in the PRX marketplace.
+
+Feeder watches for changes in data through **SNS**/**SQS**, and updates feeds as necessary when underlying data changes in either the CMS or Feeder itself.
+
+*Currently a work-in-progress; hosting details will be added later.*
+
 
