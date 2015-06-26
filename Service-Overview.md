@@ -26,6 +26,8 @@ The frontend relies on several other services, including: **cms.prx.org**, **id.
 
 # cms.prx.org
 
+cms.prx.org is the primary API for PRX user content. It is used to power **prx.org (v4)**, and integrates with **id.prx.org**, **feeder.prx.org**, and **fixer.prx.org** to handle various secondary functions.
+
 # id.prx.org
 
 All aspects of authentication and authorization across PRX properties are being moved into the id.prx.org service. It is based on signed **JSON Web Tokens** that encapsulate various claims about users' abilities in a given app for a given resource.
