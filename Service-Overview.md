@@ -38,11 +38,13 @@ The service runs on **PRX04** on **Contegix**.
 
 http://fixer.prx.org/
 
-Fixer is a media processing application used by several other PRX services. **prx.org (v3)** and **cms.prx.org** are the primary utilizers
+Fixer is a media processing application used by several other PRX services. **prx.org (v3)** and **cms.prx.org** are the primary utilizers. Mainly it is used for encoding user audio submitted to prx.org. This is done asynchronously, using callbacks. Fixer is able to pull in data from a number of common sources (S3, HTTP, etc). It also handles push delivery for Subauto via FTP.
+
+Fixer is hosted on **EC2** and is designed to scale up with demand by launching additional workers that are managed by a master controller.
 
 # Subauto
 
-Subauto encompasses services provided by several other applications. Billing and management is handled by prx.org (v3), delivery by Fixer, etc. **FTP Pull** servers (that stations can pull files from) are run on **EC2**, and mirror **S3** buckets. **Chef** is also running on **EC2** which provides some authentication for the FTP servers.
+Subauto encompasses services provided by several other applications. Billing and management is handled by prx.org (v3), delivery by Fixer, etc. **FTP Pull** servers (that stations can pull files from) are run on **EC2**, and mirror **S3** buckets; the use the prxtransfer.org domain. **Chef** is also running on **EC2** which provides some authentication for the FTP servers.
 
 # Feeder
 
