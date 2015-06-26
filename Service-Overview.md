@@ -24,14 +24,26 @@ The newest version of prx.org is a frontend-only **AngularJS** app. During deplo
 
 The frontend relies on several other services, including: **cms.prx.org**, **id.prx.org**, and **upload.prx.org**.
 
+# cms.prx.org
+
+# id.prx.org
+
+All aspects of authentication and authorization across PRX properties are being moved into the id.prx.org service. It is based on signed **JSON Web Tokens** that encapsulate various claims about users' abilities in a given app for a given resource.
+
+The service runs on **PRX04** on **Contegix**.
+
+# upload.prx.org
+
 # Fixer
 
 http://fixer.prx.org/
 
-Fixer is a media processing application used by several other PRX services. 
+Fixer is a media processing application used by several other PRX services. **prx.org (v3)** and **cms.prx.org** are the primary utilizers
 
 # Subauto
 
 Subauto encompasses services provided by several other applications. Billing and management is handled by prx.org (v3), delivery by Fixer, etc. **FTP Pull** servers (that stations can pull files from) are run on **EC2**, and mirror **S3** buckets. **Chef** is also running on **EC2** which provides some authentication for the FTP servers.
+
+# Feeder
 
 
