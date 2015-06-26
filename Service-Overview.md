@@ -18,6 +18,12 @@ Amazon **S3** is used to for user audio (and some other assets, like user images
 
 The prx.org v3 Rails app relies on **Fixer** for a number of things. Jobs are sent to Fixer to validate and encode user audio. Sub-auto delivery scheduling is handled by v3, but the deliveries themselves (pushing to stations' FTP servers) are processes by Fixer. 
 
+# PRX.org (version 4)
+
+The newest version of prx.org is a frontend-only **AngularJS** app. During deployment it is compiled down to files which can be served statically. The compilation and hosting are both handled by **PRX04** though **Contegix**.
+
+The frontend relies on several other services, including: **cms.prx.org**, **id.prx.org**, and **upload.prx.org**.
+
 # Fixer
 
 http://fixer.prx.org/
