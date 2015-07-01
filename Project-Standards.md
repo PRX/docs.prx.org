@@ -78,6 +78,20 @@ Deployment or production should be possible using a single command.
 
 Most applications are deployed using `capistrano`, though we also `chef` and are experimenting with `docker` on various platforms.
 
+#### Environment Variables
+
+##### AWS
+
+Historically AWS inconsistently used various environment variables for API and SDK related values. Unless otherwise avoidable, use the following keys to define common values. These are based on the most recent efforts by AWS to [standardize variables](http://blogs.aws.amazon.com/security/post/Tx3D6U6WSFGOK2H/A-New-and-Standardized-Way-to-Manage-Credentials-in-the-AWS-SDKs). Even if a third-party library expects an alternate version of some key, opt for the standard and explicitly passing the value to the library. Avoid defining multiple equivalent values.
+
+* `AWS_ACCESS_KEY_ID`
+* `AWS_SECRET_ACCESS_KEY`
+* `AWS_SESSION_TOKEN`
+* `AWS_REGION`
+
+##### Database
+
+When possible (i.e. with Postgres databases on Heroku, AWS RDS, etc), use a single `DATABASE_URL` environment variable to define connection settings.
 
 ### Monitoring
 
