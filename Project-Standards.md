@@ -82,7 +82,7 @@ Most applications are deployed using `capistrano`, though we also `chef` and are
 
 ##### AWS
 
-Historically AWS inconsistently used various environment variables for API and SDK related values. Unless otherwise avoidable, use the following keys to define common values. These are based on the most recent efforts by AWS to [standardize variables](http://blogs.aws.amazon.com/security/post/Tx3D6U6WSFGOK2H/A-New-and-Standardized-Way-to-Manage-Credentials-in-the-AWS-SDKs). Even if a third-party library expects an alternate version of some key, opt for the standard and explicitly passing the value to the library. Avoid defining multiple equivalent values.
+Historically AWS inconsistently used various environment variables for API and SDK related values. Unless otherwise avoidable, use the following keys to define common values. These are based on the most recent efforts by AWS to [standardize variables](http://blogs.aws.amazon.com/security/post/Tx3D6U6WSFGOK2H/A-New-and-Standardized-Way-to-Manage-Credentials-in-the-AWS-SDKs). Even if a third-party library expects an alternate version of some key, opt for the standard and explicitly passing the value to the library. Avoid defining multiple equivalent values. Avoid prefixing keys for other services that rely on AWS with `AWS_`; scope them to the service they are being defined for (e.g. `CACHE_S3_BUCKET`).
 
 * `AWS_ACCESS_KEY_ID`
 * `AWS_SECRET_ACCESS_KEY`
