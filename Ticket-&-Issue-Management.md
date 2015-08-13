@@ -39,8 +39,18 @@ This pipeline is a good candidate for WIP (work-in-progress) limits. WIP limits 
 ### Closed issues
 
 ### How do I know if a ticket has been deployed?
-All deployment notifications are sent as messages to the #deploys Slack channel.
+All deployment notifications are sent as messages to the #deploys Slack channel with the date and time of deployment. Reviewing the closed issues for the corresponding repository and sorting by recently updated should provide you with an overview of what has recently been deployed.
+
+Once an issue has been verified to be working as expected in the deployed environment the "verified" label should be added to the issue.
+
+### How are issues assigned?
+
+### How do we use estimates?
 
 ## Labels
-* reviewplx
-* estimateplx
+### reviewplx
+Waiting on input from the current assignee. If you need someone to review 
+### estimateplx
+Issues with this label are needing an effort estimate from the current assignee.
+### verified
+Applied to issues that have been verified to be working as expected in the deployed environment.
