@@ -28,7 +28,7 @@ The product owner will review issues that are in the Backlog, collecting more in
 This is the team’s current focus, and issues should be well-defined. Issues in To Do will flow into the In Progress pipeline, so order them by priority and assign keepers using the Assignee function. Issues that exist in the To Do pipeline should belong to a Milestone.
 
 ### How are issues added to a Milestone?
-Issues that are at the top of the Backlog are grouped into a Milestone. We use Milestones to group business value related issues and track the progress toward completion. Milestones should not be longer than 2 weeks in length and should have due dates associated with them.
+Issues that are at the top of the Backlog are grouped into a Milestone. We use Milestones to group business value related issues and track the progress toward completion. Milestones should not be longer than a few weeks in length and should have due dates associated with them. We use the issue effort estimates to help determine how long, and what might exist in a Milestone.
 
 ### What does it mean for an issue to exist in the In Progress pipeline?
 This is the answer to, “What are you working on right now?” Ideally, this pipeline should not contain more issues than members of your team; each team member should be working on one thing at a time.
