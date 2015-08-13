@@ -11,7 +11,9 @@ We use the following pipelines:
 Go to the appropriate repository and select "New Issue". Provide a meaningful title and enough of a description to help people review and understand the issue for triage. When New Issues are created they **should NOT be associated with a Milestone**, and **should NOT be assigned to anyone**.
 
 ### How does an issue in the New Issue pipeline move to Backlog?
-We don’t want issues to stay in the New Issue pipeline very long. The New Issues pipeline relates to the concept of triage: all issues in this pipeline require a decision. The product owner and CTO review issues that are in the New Issue pipeline and triage them to determine if there is enough information to warrant them moving into the Backlog. Issues that might require more information before moving into the Backlog should have the label "reviewplx" added to them and be assigned to the person who created the ticket.
+We don’t want issues to stay in the New Issue pipeline very long. The New Issues pipeline relates to the concept of triage: all issues in this pipeline require a decision. The product owner and CTO review issues that are in the New Issue pipeline and triage them to determine if there is enough information to warrant them moving into the Backlog.
+
+Issues that might require more information before moving into the Backlog should have the label "reviewplx" added to them and be assigned to the person who created the ticket. Sometimes issues won't make it into the Backlog (duplicates, can't be reproduced) and should be closed. 
 
 ### What happens to an issue once it is in Backlog?
 Issues in Backlog are not a current focus. For example, they may be feature requests or ideas for the next version of your product.
