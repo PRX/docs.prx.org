@@ -24,10 +24,11 @@ Prioritize issues by dragging and dropping their placement in the pipeline. Issu
 
 The product owner will review issues that are in the Backlog, collecting more information, asking for effort estimates, and then prioritizing and grouping issues into related work, a Milestone. To assist the product owner with the prioritization process, issues may be assigned to someone, with the label "estimateplx" or "reviewplx". The assignee uses the ZenHub effort estimate feature to provide the product owner with additional information to assist with prioritization.
 
-### When is a Milestone created?
-
 ### How does an issue move from Backlog to To Do?
-This is the team’s current focus, and issues should be well-defined. Issues in To Do will flow into the In Progress pipeline, so order them by priority and assign keepers using the Assignee function.
+This is the team’s current focus, and issues should be well-defined. Issues in To Do will flow into the In Progress pipeline, so order them by priority and assign keepers using the Assignee function. Issues that exist in the To Do pipeline should belong to a Milestone.
+
+### How are issues added to a Milestone?
+Issues that are at the top of the Backlog are grouped into a Milestone. We use Milestones to group business value related issues and track the progress toward completion. Milestones should not be longer than 2 weeks in length and should have due dates associated with them.
 
 ### What does it mean for an issue to exist in the In Progress pipeline?
 This is the answer to, “What are you working on right now?” Ideally, this pipeline should not contain more issues than members of your team; each team member should be working on one thing at a time.
