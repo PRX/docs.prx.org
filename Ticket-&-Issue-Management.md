@@ -4,48 +4,29 @@ Issues are filed in GitHub to the corresponding and related repository. We use [
 We are following the process described here: https://www.zenhub.io/blog/how-the-zenhub-team-uses-zenhub-boards-on-github/ This document will only cover differences, clarifications or modifications that are specific to PRX.
 
 ### Issue Pipelines
-We use the following pipelines:
+We use the same pipelines as ZenHub:
 * New Issues --> Ice Box --> Backlog <--> In Progress <--> Review/QA --> Done --> Closed
 
-### How do I see the progress for a Milestone?
-[View milestones sorted by most complete.](https://github.com/PRX/www.prx.org/milestones?direction=desc&sort=completeness&state=open)
-
 ### How do I create a New Issue?
-Go to the appropriate repository and select "New Issue". Provide a meaningful title and enough of a description to help people review and understand the issue for triage. When New Issues are created they **should NOT be associated with a Milestone**, and **should NOT be assigned to anyone**.
+Go to the appropriate repository and select "New Issue". Provide a meaningful title and enough of a description to help people review and understand the issue for triage. When New Issues are created they **MUST be associated with the Global**, and **should NOT be assigned to anyone**. The engineering team will review the New Issues and either move them into Backlog for estimation, fleshing out and planning for a milestone. Sometimes issues are duplicates of existing issues, we'll close those out and ideally reference the existing issue.
 
-### How does an issue in the New Issue pipeline move to Backlog?
-We don’t want issues to stay in the New Issue pipeline very long. The New Issues pipeline relates to the concept of triage: all issues in this pipeline require a decision. The product owner and CTO review issues that are in the New Issue pipeline and triage them to determine if there is enough information to warrant them moving into the Backlog.
+Sometimes issues just aren't clear enough, are an idea that we don't want to lose or aren't yet high enough priority to move into the **Backlog**. We use the **Ice Box** as a place to hold onto those issues.
 
-Issues that might require more information before moving into the Backlog should have the label "reviewplx" added to them and be assigned to the person who created the ticket. Sometimes issues won't make it into the Backlog (duplicates, can't be reproduced) and should be closed. 
+### Need input or review on an issue?
+Issues that might require more information should have the label "reviewplx" added to them. We use @mentions to draw the attention of people to the issue. 
 
-### What happens to an issue once it is in Backlog?
-Issues in Backlog are not a current focus. For example, they may be feature requests or ideas for the next version of your product.
+### What is a Milestone?
+Issues that are at the top of the Backlog are grouped into a Milestone. Some organizations use Milestones as Sprints and they are used to chunk work on issues into one week or two week periods. We don't operate that way.
 
-In the Backlog pipeline, add more information (like requirements and outlines) into each issue. It’s useful to get ideas out of your head, even if you will not be touching them for a while.
-
-Prioritize issues by dragging and dropping their placement in the pipeline. Issues higher in the pipeline are higher priority; accordingly, they should contain all the information necessary to get started when the time comes. Low-priority issues should still contain at least a short description.
-
-The product owner will review issues that are in the Backlog, collecting more information, asking for effort estimates, and then prioritizing and grouping issues into related work, a Milestone. To assist the product owner with the prioritization process, issues may be assigned to someone, with the label "estimateplx" or "reviewplx". The assignee uses the ZenHub effort estimate feature to provide the product owner with additional information to assist with prioritization.
-
-### How does an issue move from Backlog to To Do?
-This is the team’s current focus, and issues should be well-defined. Issues in To Do will flow into the In Progress pipeline, so order them by priority and assign keepers using the Assignee function. Issues that exist in the To Do pipeline should belong to a Milestone.
-
-### How are issues added to a Milestone?
-Issues that are at the top of the Backlog are grouped into a Milestone. We use Milestones to group business value related issues and track the progress toward completion. Milestones should not be longer than a few weeks in length and should have due dates associated with them. We use the issue effort estimates to help determine how long, and what might exist in a Milestone.
-
-### What does it mean for an issue to exist in the In Progress pipeline?
-This is the answer to, “What are you working on right now?” Ideally, this pipeline should not contain more issues than members of your team; each team member should be working on one thing at a time.
-
-This pipeline is a good candidate for WIP (work-in-progress) limits. WIP limits help ensure your work flows smoothly, and help bring to light any blockers or bottlenecks. Adjust WIP limits according to the size of your team.
+We use Milestones to group issues that relate to a common business value so that we may track the progress toward completion. Milestones should not be longer than a few weeks in length and should have due dates associated with them. We use the issue effort estimates to help determine how long a Milestone is, and what might exist in a Milestone.
 
 ### What does it mean for an issue to be in the Done pipeline?
+The issue has been deployed to production and customers are deriving the 
 
 ### Closed issues
 
 ### How do I know if a ticket has been deployed?
 All deployment notifications are sent as messages to the #deploys Slack channel with the date and time of deployment. Reviewing the closed issues for the corresponding repository and sorting by recently updated should provide you with an overview of what has recently been deployed.
-
-Once an issue has been verified to be working as expected in the deployed environment the "verified" label should be added to the issue.
 
 ### How are issues assigned?
 
