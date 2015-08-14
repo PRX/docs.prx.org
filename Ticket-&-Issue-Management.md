@@ -7,8 +7,8 @@ Some of the information below is adapted from: https://www.zenhub.io/blog/how-th
 We use the following pipelines:
 * New Issues --> Ice Box --> Backlog <--> In Progress <--> Review/QA --> Done --> Closed
 
-How do I see the progress for a Milestone?
-https://github.com/PRX/www.prx.org/milestones?direction=desc&sort=completeness&state=open
+### How do I see the progress for a Milestone?
+[View milestones sorted by most complete.](https://github.com/PRX/www.prx.org/milestones?direction=desc&sort=completeness&state=open)
 
 ### How do I create a New Issue?
 Go to the appropriate repository and select "New Issue". Provide a meaningful title and enough of a description to help people review and understand the issue for triage. When New Issues are created they **should NOT be associated with a Milestone**, and **should NOT be assigned to anyone**.
@@ -52,9 +52,9 @@ Once an issue has been verified to be working as expected in the deployed enviro
 ### How do we use estimates?
 
 ## Labels
+### Milestone Goal
+Used to identify the issue that provides a high level overview for a milestone.
 ### reviewplx
 Waiting on input from the current assignee. If you need someone to review 
 ### estimateplx
 Issues with this label are needing an effort estimate from the current assignee.
-### verified
-Applied to issues that have been verified to be working as expected in the deployed environment.
