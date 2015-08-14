@@ -21,6 +21,13 @@ Issues that are at the top of the Backlog are grouped into a Milestone. Some tea
 ### How do I check on the status of an issue or Milestone?
 [Milestone progress.](https://github.com/PRX/www.prx.org/milestones?direction=desc&sort=completeness&state=open)
 
+Milestones have the following states:
+* ON HOLD
+* EXPECTED START DATE
+* IN PROGRESS
+
+Each milestone description should link to an issue that acts as an overview for the milestone. These issues have the label "milestone goal" applied. The best way to determine how much progress has been made in a milestone is to view is sorted by [most complete](https://github.com/PRX/www.prx.org/milestones?direction=desc&sort=completeness&state=open).
+
 ### What does it mean for an issue to be in the Done pipeline?
 The issue has been deployed to production and customers are deriving the 
 
