@@ -32,13 +32,13 @@ The issue has been deployed to production and customers are deriving the
 ### Closed issues
 
 ### How do I know if a ticket has been deployed?
-All deployment notifications are sent as messages to the #deploys Slack channel with the date and time of deployment. Reviewing the closed issues for the corresponding repository and sorting by recently updated should provide you with an overview of what has recently been deployed.
+Deployment notifications are sent as messages to the #deploys Slack channel with the date and time of deployment. @farski did we come to some ~final way to determine this?
 
 ### How are issues assigned?
 
 ### How do we use estimates?
 
-## Labels
+## Issue Labels
 ### Milestone Goal
 Used to identify the issue that provides a high level overview for a milestone.
 ### reviewplx
