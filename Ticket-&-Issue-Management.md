@@ -1,11 +1,14 @@
 # Overview
 Issues are filed in GitHub to the corresponding and related repository. We use [ZenHub](https://www.zenhub.io/) boards to view and manage the issues through their workflow. After installing the ZenHub Chrome Extension a new icon should show up on the GitHub repository, the ZenHub board icon should appear below the < > code icon. ZenHub uses "Pipelines" to help organize issues.
 
-Some of the information below is adapted from: https://www.zenhub.io/zenhubBoard
+Some of the information below is adapted from: https://www.zenhub.io/blog/how-the-zenhub-team-uses-zenhub-boards-on-github/
 
 ### Issue Pipelines
 We use the following pipelines:
-* New Issues --> Backlog <--> To Do --> In Progress --> Done --> Closed
+* New Issues --> Ice Box --> Backlog <--> In Progress <--> Review/QA --> Done --> Closed
+
+How do I see the progress for a Milestone?
+https://github.com/PRX/www.prx.org/milestones?direction=desc&sort=completeness&state=open
 
 ### How do I create a New Issue?
 Go to the appropriate repository and select "New Issue". Provide a meaningful title and enough of a description to help people review and understand the issue for triage. When New Issues are created they **should NOT be associated with a Milestone**, and **should NOT be assigned to anyone**.
