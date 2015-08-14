@@ -1,4 +1,4 @@
-# Overview
+# DRAFT Overview
 Issues are filed in GitHub to the corresponding and related repository. We use [ZenHub](https://www.zenhub.io/) boards to view and manage the issues through their workflow. After installing the ZenHub Chrome Extension a new icon should show up on the GitHub repository, the ZenHub board icon should appear below the < > code icon. ZenHub uses "Pipelines" to help organize issues.
 
 We are following the process described here: https://www.zenhub.io/blog/how-the-zenhub-team-uses-zenhub-boards-on-github/ This document will only cover differences, clarifications or modifications that are specific to PRX.
@@ -8,7 +8,7 @@ We use the same pipelines as ZenHub:
 * New Issues --> Ice Box --> Backlog <--> In Progress <--> Review/QA --> Done --> Closed
 
 ### How do I create a New Issue?
-Go to the appropriate repository and select "New Issue". Provide a meaningful title and enough of a description to help people review and understand the issue for triage. When New Issues are created they **MUST be associated with the Global**, and **should NOT be assigned to anyone**. The engineering team will review the New Issues and either move them into Backlog for estimation, fleshing out and planning for a milestone. Sometimes issues are duplicates of existing issues, we'll close those out and ideally reference the existing issue.
+Go to the appropriate repository and select "New Issue". Provide a meaningful title and enough of a description to help people review and understand the issue for triage. When New Issues are created they **MUST be associated with the Global** milestone, and **should NOT be assigned to anyone**. The engineering team will review the New Issues weekly and either move them into Backlog for more detail, estimation, prioritizing and planning for a milestone. Sometimes issues are duplicates of existing issues, we'll close those out and ideally reference the existing issue.
 
 Sometimes issues just aren't clear enough, are an idea that we don't want to lose or aren't yet high enough priority to move into the **Backlog**. We use the **Ice Box** as a place to hold onto those issues.
 
@@ -16,9 +16,7 @@ Sometimes issues just aren't clear enough, are an idea that we don't want to los
 Issues that might require more information should have the label "reviewplx" added to them. We use @mentions to draw the attention of people to the issue. 
 
 ### What is a Milestone?
-Issues that are at the top of the Backlog are grouped into a Milestone. Some organizations use Milestones as Sprints and they are used to chunk work on issues into one week or two week periods. We don't operate that way.
-
-We use Milestones to group issues that relate to a common business value so that we may track the progress toward completion. Milestones should not be longer than a few weeks in length and should have due dates associated with them. We use the issue effort estimates to help determine how long a Milestone is, and what might exist in a Milestone.
+Issues that are at the top of the Backlog are grouped into a Milestone. Some teams use Milestones  to organize Sprints that are chunked by time. We use Milestones to group related issues to a customer business value objective so that we may track the progress toward completion. Milestones should not be longer than a few weeks in length and should have due dates associated with them. We use the issue effort estimates to help determine what we can accomplish in a Milestone, or if it needs to be split.
 
 ### What does it mean for an issue to be in the Done pipeline?
 The issue has been deployed to production and customers are deriving the 
