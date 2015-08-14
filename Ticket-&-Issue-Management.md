@@ -18,6 +18,9 @@ Issues that might require more information should have the label "reviewplx" add
 ### What is a Milestone?
 Issues that are at the top of the Backlog are grouped into a Milestone. Some teams use Milestones  to organize Sprints that are chunked by time. We use Milestones to group related issues to a customer business value objective so that we may track the progress toward completion. Milestones should not be longer than a few weeks in length and should have due dates associated with them. We use the issue effort estimates to help determine what we can accomplish in a Milestone, or if it needs to be split.
 
+### How do I check on the status of an issue or Milestone?
+[Milestone progress.](https://github.com/PRX/www.prx.org/milestones?direction=desc&sort=completeness&state=open)
+
 ### What does it mean for an issue to be in the Done pipeline?
 The issue has been deployed to production and customers are deriving the 
 
