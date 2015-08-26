@@ -5,7 +5,7 @@ We are following the process described here: https://www.zenhub.io/blog/how-the-
 
 ### Issue Pipelines
 We use the same pipelines as ZenHub:
-* New Issues --> Ice Box --> Backlog <--> In Progress <--> Review/QA --> Done --> Closed
+* New Issues --> Ice Box | Backlog <--> In Progress <--> Review/QA --> Done --> Closed
 
 ### How do I create a New Issue?
 Go to the appropriate repository and select "New Issue". Provide a meaningful title and enough of a description to help people review and understand the issue for triage. When New Issues are created they **MUST be associated with the Global** milestone, and **should NOT be assigned to anyone**. The engineering team will review the New Issues weekly and either move them into Backlog for more detail, estimation, prioritizing and planning for a milestone. Sometimes issues are duplicates of existing issues, we'll close those out and ideally reference the existing issue.
