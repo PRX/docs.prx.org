@@ -1,21 +1,17 @@
-New Relic is used to monitor the health of our systems, including applications and servers.
+New Relic is used to monitor the health of our systems, including applications and servers. The primary New Relic account has been switched entirely to the new Alerts system.
+
+## Availability Monitoring
+
+All availability monitoring is handled through New Relic Synthetics on the primary PRX account, even for apps that are monitored on PRX Lite, and applications that are not otherwise monitored through New Relic.
 
 ## Alert Policies
 
-For important *application*, *key transaction*, and *server* policies, generally a single policy is created for each property. In some cases very closely related properties will share a policy. Usually there won't be anything assigned to the *default policies*.
+Policies for each domain are broken down into two groups: Major and Minor. Monitoring conditions that are considered to be critical or high-priority belong to the Major group, and all other conditions belong to the Minor group.
 
-### Alert Channels
+In general, downtime (monitored by Synthetics) is considered critical. Error rate conditions are generally not considered critical. Server conditions (memory or disk usage, etc) is handled on a case-by-case basis, based on the importance of the applications running on the hardware.
 
-#### Slack
+## Notification channels
 
-The `#trouble` channel in Slack should receive all critical event alerts. Make sure it is added as an alert channel on any new policies.
+All Major group policies belong to a Major Issues channel, and all Minor group policies belong to a Minor Issues channel. There are corresponding Slack channels that are configured to receive notifications from each channel.
 
-#### Email and Mobile
-
-The `Tech Team` alert group should include any technical staff who needs to be aware of system health and performance. This group should be added as an alert channel to all policies. User alert channels will receive all critical event alerts.
-
-Individual users generally decide which policies are received as emails or mobile push notifications. This can be controller at the policy level by admins, though, if necessary.
-
-### Limited Alert Notifications
-
-Normal alert channels (Slack, Groups, and Users) will receive all alerts (i.e., *all critical events*). If there is a need to send only *first critical events* or *downtime events* notifications to some channel, they need to be configured separately from the normal channels.
+Individual users should opt into any notification channels for which they wish to receive alerts. There is generally no need for a user to receive Minor policy notifications.
