@@ -38,6 +38,8 @@ The service is a **Rails 4** app that runs on **PRX04** with **Contegix**.
 
 # upload.prx.org
 
+User content uploaded to **S3** from the **v4** frontend is cryptographically signed so that AWS will accept the upload. The service that does the signing is built using **API Gateway** and **AWS Lambda**. 
+
 # Fixer
 
 http://fixer.prx.org/
