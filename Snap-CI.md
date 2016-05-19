@@ -36,10 +36,10 @@ Build a docker image and push it to ECR.
     REPO_STRING="$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$ECR_REPO:$SNAP_BRANCH$SNAP_UPSTREAM_BRANCH.$SNAP_PIPELINE_COUNTER"
     echo "Exporting to $REPO_STRING"
     ECR_LOGIN=$(aws ecr get-login)
-    eval sudo $ECR_LOGIN
+    eval $ECR_LOGIN
     aws ecr create-repository --repository-name=$ECR_REPO || true
-    sudo docker build --tag=$REPO_STRING .
-    sudo docker push $REPO_STRING
+    docker build --tag=$REPO_STRING .
+    docker push $REPO_STRING
 
 ## Stage 3: Stage
 
