@@ -15,6 +15,18 @@ These are the standards and best practices to be followed so long as they make s
 - For a gem, use standard gem naming practices with underscores and dashes.
 - Add 'prx' to the name only if it is specific to PRX, not just as the source.
 
+### Domains
+
+Deployed PRX projects should be hosted on one (or possibly more if using `.tech`) PRX domains:
+
+- `prx.org` - Normal public-facing PRX services
+- `prxu.org` - Hosts all user-generated content, to prevent potentially malicious content from executing under `prx.org` permissions ([same-origin policy](https://en.m.wikipedia.org/wiki/Same-origin_policy)).
+- `prx.tech`
+  - Internal PRX tools and services
+  - Use as a temporary name when setting up or testing a `prx/prxu` setup
+
+Staging services should use a similar name to production, but with a `-staging` after the name (e.g. `cms-staging.prx.org`).  Do _not_ just add another dot to the name, as in `staging.cms.prx.org`, as this won't work with our wildcard certs.  Other named environments should follow this same pattern - `cms-demo.prx.org` or `cms-stress.prx.org`.
+
 ### Documentation
 
 Reference these standards in the README so as not to repeat their full explanation.
