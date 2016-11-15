@@ -27,14 +27,16 @@ Milestones have the following states:
 Each milestone description should link to an issue that acts as an overview for the milestone. These issues have the label "milestone goal" applied. The best way to determine how much progress has been made in a milestone is to view is sorted by [most complete](https://github.com/PRX/www.prx.org/milestones?direction=desc&sort=completeness&state=open).
 
 ### What does it mean for an issue to be in the Done pipeline?
-The issue has been deployed to production and customers are deriving the 
+The issue has been completed, but is not yet in production
 
 ### Closed issues
+Once a done issue has been deployed, it can be marked as Closed.
 
 ### How do I know if a ticket has been deployed?
 Deployment notifications are sent as messages to the #deploys Slack channel with the date and time of deployment. @farski did we come to some ~final way to determine this?
 
 ### How are issues assigned?
+Tickets are assigned at the start of a milestone, but could be adjusted later.
 
 ### How do we use estimates?
 
