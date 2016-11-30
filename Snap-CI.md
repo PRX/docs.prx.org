@@ -15,11 +15,12 @@ UNSECURED:
     AWS_ACCOUNT_ID=561178107736
     SNAP_API_USER=cavis
 
-SECURED: (these are in LastPass -> Secure Notes -> SnapCI credentials)
+SECURED: (these are in LastPass -> Secure Notes -> PRX Developer Services -> SnapCI credentials)
 
     SNAP_API_KEY=???
     AWS_ACCESS_KEY_ID=???
     AWS_SECRET_ACCESS_KEY=???
+    SLACK_HOOK=???
 
 ## Stage 1: Test
 
