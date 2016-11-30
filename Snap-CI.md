@@ -17,7 +17,7 @@ UNSECURED:
 
 SECURED: (these are in LastPass -> Secure Notes -> SnapCI credentials)
 
-    SNAP_API_KEY=???  #this is my key in the preview env - will have to change when we go to prod
+    SNAP_API_KEY=???
     AWS_ACCESS_KEY_ID=???
     AWS_SECRET_ACCESS_KEY=???
 
