@@ -56,7 +56,7 @@ Deploy the image you just built to our ECS staging cluster.  Make sure to change
 
 Trigger the meta.prx.org pipeline, which will run acceptance tests against staging, and allow a click-button deploy to production.
 
-    curl -u $SNAP_API_USER:$SNAP_API_KEY -X POST -H 'Accept:application/vnd.snap-ci.com.v1+json' -H 'Content-type:application/json' https://api-preview.snap-ci.com/project/PRX/meta.prx.org/branch/master/trigger --data '{"env":{"PRX_TRIGGER":"$ECR_REPO"}}'
+    curl -u $SNAP_API_USER:$SNAP_API_KEY -X POST -H 'Accept:application/vnd.snap-ci.com.v1+json' -H 'Content-type:application/json' https://api.snap-ci.com/project/PRX/meta.prx.org/branch/master/trigger --data '{"env":{"PRX_TRIGGER":"$ECR_REPO"}}'
 
 I'm not sure that env-data actually works.  But someday!
 
