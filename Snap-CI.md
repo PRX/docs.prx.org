@@ -26,7 +26,7 @@ SECURED: (these are in LastPass -> Secure Notes -> SnapCI credentials)
 Run your test suite
 
     # do whatever you need to run your tests
-    npm install
+    npm --loglevel error install
     npm test
 
 ## Stage 2: Dockerize
@@ -43,13 +43,13 @@ Build a docker image and push it to ECR.
 
 ## Stage 3: Stage
 
-Deploy the image you just built to our ECS staging cluster
+Deploy the image you just built to our ECS staging cluster.  Make sure to change the snap-ci links in the slack alert, and the name of your service in the ecs-deploy.
 
     REPO_STRING="$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$ECR_REPO:$SNAP_BRANCH$SNAP_UPSTREAM_BRANCH.$SNAP_PIPELINE_COUNTER"
     curl -sL https://raw.githubusercontent.com/PRX/meta.prx.org/master/bin/ecs-deploy > ecs-deploy
-    chmod +x ecs-deploy
-    sudo apt-get --assume-yes install jq
-    ./ecs-deploy --cluster prx-staging --service-name [name of your ECS service] --image $REPO_STRING --timeout 120
+    curl -d "{\"text\":\"Starting deploy of <https://snap-ci.com/PRX/[name of your github project]|$ECR_REPO:$SNAP_BRANCH.$SNAP_PIPELINE_COUNTER> to prx-staging\"}" $SLACK_HOOK
+    ruby ecs-deploy --cluster prx-staging --service-name [name of your ECS service] --image $REPO_STRING --timeout 200
+    curl -d "{\"text\":\"Successfully deployed <https://snap-ci.com/PRX/[name of your github project]|$ECR_REPO:$SNAP_BRANCH.$SNAP_PIPELINE_COUNTER> to prx-staging!\"}" $SLACK_HOOK
 
 ## Stage 4: Trigger
 
