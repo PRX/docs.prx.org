@@ -65,12 +65,11 @@ Save/run your pipeline.  Edit until it all works.
 
 Then add some acceptance tests to the meta.prx.org repo.  And in Snap, edit the 2nd "Resolve" stage of the meta.prx.org pipeline to add your ECS service:
 
-    # add these 2 lines, to concat your service to the staging.env file
-    SERVICE_FOOBAR=$(./bin/ecs-image --cluster prx-staging --service-name your-service-name-here)
-    echo "SERVICE_FOOBAR=$SERVICE_FOOBAR" >> staging.env
+    # add this line, to concat your service to the staging.env file
+    echo "SERVICE_FOOBAR=$(ecslook foobar-staging)" >> staging.env
 
-When you've also got a prod service setup, add it to the mappings in the 3rd "Deploy_Prod" stage:
+When you've also got a prod service setup, add it to the `--mapping` in the 3rd "Deploy_Prod" stage:
 
-    ./bin/deploy-env --cluster prx-production --timeout 150 --mapping "dovetail=$SERVICE_DOVETAIL,yourprodservice=$SERVICE_FOOBAR"
+    ruby bin/ecs-deploy --cluster prx-production --timeout 240 --mapping "dovetail-production=$SERVICE_DOVETAIL,foobar-production=$SERVICE_FOOBAR"
 
 Then... profit.
