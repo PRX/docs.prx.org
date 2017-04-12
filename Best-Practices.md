@@ -1,5 +1,25 @@
 These are more subject to change and refinement than standards, but still should be followed when appropriate.
 
+# Design
+
+## Preconditions
+* The general idea, scope, size, and duration for the design should be discussed before starting.
+* There should be a github repo and issue(s) tracking the feature, scheduled for a milestone.
+
+## Process
+For new apps or large features, follow a Design Thinking process, usually including the following elements, in order, iteratively, and as needed.
+
+1. *Problem statement* - devise an initial problem statement to center things on
+1. *User interviews* - talk with the people involved in the problem area to understand more about what they do and what is important
+1. *Research* - investigate related trends, existing/competing products, and information on the topic
+1. *Point of View* - based on the interviews, write a POV statement to guide the design
+1. *Brain Storm Solutions* - with a team, flare with a brain storm of possible solutions, then focus on a smaller number of solutions to pursue
+1. *One sheet* - for each chosen possible solution (1-3), create "one sheet" descriptions, discuss and pick favorites
+1. *Prototype* - create paper or other rough prototypes, enough to be testable. Show the prototypes to possible users, record feedback, and iterate.
+1. *Wireframe* - create digital interactive wireframes (i.e. using sketchapp.com), further test internally and with users and iterate on these
+1. *Design Review* - review the wireframes with UX and FE leads to make sure it follows standards, is consistent with any other design guides, and for use or expansion of the style guide for the components in the pages
+
+
 # Development
 
 ## Process
@@ -10,7 +30,7 @@ These are more subject to change and refinement than standards, but still should
 - The name should be descriptive of the changes
 
 ### 2. Make changes
-- Make changes to the code, commiting at your own pace, but often is good
+- Make changes to the code, committing at your own pace, but often is good
 - Add comments as needed, but code should be as readable as possible
 - Add and update tests as needed
 - All changes are expected to have working tests
