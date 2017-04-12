@@ -16,7 +16,7 @@ For new apps or large features, follow a Design Thinking process, usually includ
 1. *Brain Storm Solutions* - with a team, flare with a brain storm of possible solutions, then focus on a smaller number of solutions to pursue
 1. *One sheet* - for each chosen possible solution (1-3), create "one sheet" descriptions, discuss and pick favorites
 1. *Prototype* - create paper or other rough prototypes, enough to be testable. Show the prototypes to possible users, record feedback, and iterate.
-1. *Wireframe* - create digital interactive wireframes (i.e. using sketchapp.com), further test internally and with users and iterate on these
+1. *Wireframe* - create digital interactive wireframes (i.e. using sketch and invision), further test internally and with users and iterate on these
 1. *Design Review* - review the wireframes with UX and FE leads to make sure it follows standards, is consistent with any other design guides, and for use or expansion of the style guide for the components in the pages
 
 
