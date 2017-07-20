@@ -104,4 +104,4 @@ Acceptable coverage is determined by the review, generally expected to be highly
 
 ## Integration Testing
 
-Currently implemented for the www app integrating with the cms.  This needs revisiting, especially to include dependencies between services for coordinated releases, and for better repeatable testing with standard test data.
+Integration tests should be included in the `wiki.prx.org` repo.  The target application URLs and any secrets needed are passed in via ENV variables.
