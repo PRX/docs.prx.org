@@ -34,6 +34,7 @@ Reference these standards in the README so as not to repeat their full explanati
 The following is also required for a web project README.md:
 - Badges for travis, coveralls, code climate, and gemnasium
 - Description
+  - Should include a brief overview of what the application does, and how it fits into the larger PRX architecture. Avoid getting into technical specifics - those can come in a different section, or another file entirely.
 - Installation
 - Integrations and/or dependencies
 - Usage
