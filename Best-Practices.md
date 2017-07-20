@@ -48,6 +48,7 @@ For new apps or large features, follow a Design Thinking process, usually includ
 - Make the title as non-technical as possible (release notes worthy)
 - Add description of anything not yet done, or that needs explaining to a reviewer
 - Assign the PR to a reviewer when it is complete
+- If you find yourself explaining specific lines of code to the reviewer in the PR, consider moving these comments into the code itself. Otherwise they're just lost after merge.
 
 ### 5. Code Review
 - Reviewer reads the changes, comments on issues or questions
@@ -55,6 +56,12 @@ For new apps or large features, follow a Design Thinking process, usually includ
 - When both are satisfied, Reviewer merges changes, and deletes the branch
 
 ## Running Locally
+
+### docker-compose
+
+Most PRX projects include a `Dockerfile` and `docker-compose.yml`.  You should
+consider developing/testing via Docker whenever possible, since it gives you an
+environment identical to production.
 
 ### rbenv
 
