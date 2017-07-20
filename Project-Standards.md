@@ -85,11 +85,9 @@ There are several libraries to help with this:
 
 ## Running in Production
 
-### Deployment
+### Docker
 
-Deployment or production should be possible using a single command.
-
-Most applications are deployed using `capistrano`, though we also `chef` and are experimenting with `docker` on various platforms.
+Projects should be Dockerized whenever possible.  Deployments are managed via the PRX [Infrastructure](https://github.com/PRX/Infrastructure) project.
 
 #### Environment Variables
 
