@@ -1,6 +1,6 @@
 Current hosting: Contigex and AWS.
 
-== Contigex
+## Contigex
 
 mostly Rails apps and one NodeJS app.
 
@@ -11,7 +11,7 @@ mostly Rails apps and one NodeJS app.
 * billboard (runs public radio player mobile app)
 * networks (easy file transfer for journalism centers, et al)
 
-== AWS
+## AWS
 
 * fixer.prx.org (supports SubAuto) (Rails 3)
 * big S3 bucket mirrored to regional FTP servers (read-only, pulled by stations)
