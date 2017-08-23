@@ -23,6 +23,8 @@ Frontend
 * publish
 * beta
 * play
+* adze
+* metrics
 
 API
 * CMS
