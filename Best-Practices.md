@@ -2,9 +2,11 @@ These are more subject to change and refinement than standards, but still should
 
 # Design
 
+By "design" we do not mean merely the visual presentation, but the complete product design process, including ideation, user experience (UX), visual and usability testing processes.
+
 ## Preconditions
 * The general idea, scope, size, and duration for the design should be discussed before starting.
-* There should be a github repo and issue(s) tracking the feature, scheduled for a milestone.
+* There should be a github repo and issue(s) tracking the feature, scheduled for a sprint. If there isn't yet a repo for the product, the `meta` or `internal` repositories can be used.
 
 ## Process
 For new apps or large features, follow a Design Thinking process, usually including the following elements, in order, iteratively, and as needed.
@@ -38,22 +40,23 @@ For new apps or large features, follow a Design Thinking process, usually includ
 
 ### 3. Commit and push changes
 - Push the updated branch to the remote origin
-- Do not make branches on a user or other fork
+- *Do not make branches on a user or other fork*
   - This allows travis to test the branch and PR
 - Remote push will trigger hound and travis tests
-- Fix all test failures,
+- Fix all test failures
 
 ### 4. Create a Pull Request (PR)
 - Create a PR for the branch in github
 - Make the title as non-technical as possible (release notes worthy)
 - Add description of anything not yet done, or that needs explaining to a reviewer
-- Assign the PR to a reviewer when it is complete
-- If you find yourself explaining specific lines of code to the reviewer in the PR, consider moving these comments into the code itself. Otherwise they're just lost after merge.
+- Assign the PR to yourself
+- Assign any Reviewers explicitly and/or announce on Slack that the PR is ready for review
+- If you find yourself explaining specific lines of code to the Reviewer in the PR, consider moving these comments into the code itself. Otherwise they're just lost after merge.
 
 ### 5. Code Review
 - Reviewer reads the changes, comments on issues or questions
 - Author makes changes or answers questions
-- When both are satisfied, Reviewer merges changes, and deletes the branch
+- When both are satisfied, Reviewer merges changes, and deletes the branch. We use merge commits, so *do not squash* using the GitHub feature, as a general rule. Exceptions can be made for fix-up commits.
 
 ## Running Locally
 
