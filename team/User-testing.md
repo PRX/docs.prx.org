@@ -29,6 +29,7 @@ User testing is when we schedule time with one person, and observe them using an
 * Check any data is setup and makes sense, ideally use data the tester will find meaningful
 * Have team member roles assigned
 * Make sure the A/V setup is working
+* Prepare questions, scenarios to be tested, things to try, especially where tester feedback can help decide on the design
 
 ## Kicking off testing
 * Make sure the session is being recorded
