@@ -2,6 +2,13 @@
 
 User testing is when we schedule time with one person, and observe them using an application or prototype.
 
+## When to do user testing?
+* As part of design thinking, develop protypes and test them with as soon as possible
+* After significant revisions to a design, you can schedule additional testing
+* Before starting development on a design or mockup
+* After enough of an application is built for a tester to do things and provide useful feedback
+* To test out different possible options for a design
+
 ## Schedule
 * A github ticket can be used to track user testing as part of a sprint
 * Include the tech team on the invite; they do not all have to come
