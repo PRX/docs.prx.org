@@ -35,7 +35,9 @@ User testing is when we schedule time with one person, and observe them using an
 * Provide as little guidance as possible, to try to get the tester's unadulterated reactions and thoughts
 * Try to ask questions, and use questions as answers back to the tester
 * If the tester is struggling, don't explain, ask what they think should happen, and encourage trying things
-* If other issues or topics come up, Have the recorder note this issue, and try to move on with testing
+* If other issues or topics come up, have the recorder note this issue, and try to move on with testing
+* If a tester has not tried a part of the app yet, ask them to do some action that would require them to use it
+* When a tester gets stuck, ask them to try a different scenario, or ask how else they might use the app/prototype
 
 ## During the testing, the recorder should:
 * The recorder should take down the users exact words and actions with little interpretation
