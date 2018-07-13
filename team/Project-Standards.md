@@ -32,7 +32,6 @@ Staging services should use a similar name to production, but with a `-staging` 
 Reference these standards in the README so as not to repeat their full explanation.
 
 The following is also required for a web project README.md:
-- Badges for travis, coveralls, code climate, and gemnasium
 - Description
   - Should include a brief overview of what the application does, and how it fits into the larger PRX architecture. Avoid getting into technical specifics - those can come in a different section, or another file entirely.
 - Installation
@@ -48,7 +47,7 @@ The following is also required for a web project README.md:
 
 ## Ruby Version
 
-Specify the version of ruby used for the project using a `.ruby-version` file. The version specified should **exactly match** the version used for the project in production.
+Specify the version of ruby used for the project using a `.ruby-version` file. The version specified should **exactly match** the version used for the project in production. **Note** the Ruby version may also be listed in the `Gemfile` and/or `Dockerfile` so be sure to compare.
 
 ## Authentication and Authorization
 
