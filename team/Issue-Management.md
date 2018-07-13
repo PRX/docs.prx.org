@@ -24,29 +24,30 @@ When `New Issues` are created they are typically un-assigned, unless you are cre
 
 Do not assign to a **Milestone** ([Sprint](Sprints.md)), unless you are assigning the issue to yourself.
 
-## Priority
-
-Feel free to assign a priority label of `low`, `medium` or `high`. Note that the priority may change during grooming.
-
 ## Estimate
 
-ZenHub offers the Estimate field that vanilla GitHub does not. Feel free to assign an Estimate if you feel confident about the level of effort required to accomplish the issue. An Estimate must be set before the issue is moved to the `Backlog` Pipeline.
+An Issue is not groomed until it has an Estimate assigned. ZenHub offers the Estimate field that vanilla GitHub does not. Feel free to assign an Estimate if you feel confident about the level of effort required to accomplish the issue. An Estimate must be set before the issue is moved to the `Backlog` Pipeline.
+
+The scale we use is:
+
+```
+1 = I can squeeze it in before lunch
+2 = I can get it done this afternoon
+3 = I can get it done tomorrow
+5 = It'll take a couple days
+8 = I need to set aside several days
+13 = That's a week+
+```
+
+## Priority
+
+Assign a priority Label of **high**, **medium**, or **low**. We know priority is in the eye of the beholder. Priority can be negotiated at Grooming time. Assign the initial priority based on **what you think it is**.
 
 # Grooming
 
 The goal of the grooming exercise is to move issues from the `New Issues` Pipeline to the `Backlog`. In order to be in the `Backlog`, an issue should have an **Estimate** and a **Priority**.
 
 Sometimes issues just aren't clear enough in their description, or are an idea that we don't want to lose, or aren't yet high enough priority to move into the `Backlog`. We use the `Ice Box` as a place to hold onto those issues.
-
-## Estimate
-We use T-shirt sizes to gauge the level of effort estimated for an issue. ZenHub uses numbers, so we mentally map them like this:
-```
-1: Extra small
-2: Small
-3: Medium
-5: Large
-8: Extra large
-```
 
 ## Priority
 We use labels to assign a Priority of `high`, `medium` or `low`. The Priority should reflect both business and technical need for a particular issue. In theory, all `high` issues should receive attention before `medium` issues, etc.
@@ -55,7 +56,8 @@ We use labels to assign a Priority of `high`, `medium` or `low`. The Priority sh
 Issues that might require more information should have the label `reviewplx` added to them. We use @mentions to draw the attention of people to the issue.
 
 # What does it mean for an issue to be in the Done pipeline?
-The issue has been completed, but is not yet deployed to production.
+The issue has been completed, but is not yet deployed to production. Check the #ops-deploys Slack channel for CI/CD
+feature to deploy code to production.
 
 # Closed issues
 Once a `Done` issue has been deployed, it can be closed.
