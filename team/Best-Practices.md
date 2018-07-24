@@ -56,7 +56,7 @@ For new apps or large features, follow a Design Thinking process, usually includ
 ### 5. Code Review
 - Reviewer reads the changes, comments on issues or questions
 - Author makes changes or answers questions
-- When both are satisfied, Reviewer merges changes, and deletes the branch. We use merge commits, so *do not squash* using the GitHub feature, as a general rule. Exceptions can be made for fix-up commits.
+- When both are satisfied, Reviewer merges changes, and deletes the branch. Some repos use merge commits, some use Squash and Merge (the GitHub feature), so if in doubt, ask in Slack. As a general rule, we use merge commits.
 
 ## Running Locally
 
@@ -66,6 +66,8 @@ Most PRX projects include a `Dockerfile` and `docker-compose.yml`.  You should
 consider developing/testing via Docker whenever possible, since it gives you an
 environment identical to production.
 
+For local Docker development, we often use [dinghy](https://github.com/codekitchen/dinghy).
+
 ### rbenv
 
 We use rbenv to easily switch between versions of ruby for different apps.
@@ -73,10 +75,8 @@ Each web app/service should provide a `.ruby-version` file to work with `rbenv`.
 
 ### pow & powder
 
-We use pow to run web applications and services locally.
-This defaults to using the '.dev' TLD for locally running projects.
-Add a `.powder` file to specify the domain and subdomain to use with '.dev'.
-
+If you are not using Docker, some developers use [pow](http://pow.cx/) to run web applications and services locally.
+Since the `.dev` TLD no longer works with pow, so also consider [puma-dev](https://github.com/puma/puma-dev).
 
 ## Upgrades
 
@@ -107,4 +107,4 @@ Acceptable coverage is determined by the review, generally expected to be highly
 
 ## Integration Testing
 
-Integration tests should be included in the `wiki.prx.org` repo.  The target application URLs and any secrets needed are passed in via ENV variables.
+Integration tests should be included in the [meta.prx.org repo](https://github.com/PRX/meta.prx.org). The target application URLs and any secrets needed are passed in via ENV variables.

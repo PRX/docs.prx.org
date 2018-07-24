@@ -65,6 +65,6 @@ User testing is when we schedule time with one person, and observe them using an
 * Go over the notes, and discuss what the tester liked, and where they struggled
 * Identify areas to change, and open tickets for making changes to explore these in the next version
 * Where possible discuss, and as time allows, discuss specific changes to try in the next version
-* Open tickets for issues brought up byu the tester
+* Open tickets for issues brought up by the tester
 * Open tickets for new enhancements suggested by the user or that came up in discussion
 

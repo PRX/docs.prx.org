@@ -1,40 +1,42 @@
 This is high-level overview of applications and services that PRX is currently maintaining. 
 
-# Billboard
+# www.prx.org
 
-http://billboard.publicradioplayer.org/
+[Proxy](https://github.com/prx/proxy.prx.org) that directs to exchange.prx.org or corporate.prx.org.
 
-Billboard is a aggregator backend for podcasts, RSS news feeds, radio streams, and station scheduling data. Historically it was also used to manage things like station membership benefits.
+# corporate.prx.org
 
-It is a **Rails 3** application that runs on **PRX03** hosted with **Contegix**. The MySQL and Redis datastores the application uses are also hosted on **PRX03**. Background processors are run to fetch and process and feeds and schedules through **Sidekiq**. Full-text search is handled by **Spinx**, which runs as a service on **PRX03**.
+Squarespace site for company information.
 
-# PRX.org (version 3)
+# exchange.prx.org (version 3)
 
-http://www.prx.org
-
-Version 3 of prx.org is a **Rails 2** application that runs on **PRX01** and **PRX04** hosted with **Contegix**. It runs off a MySQL database that is also hosted on **PRX01**, which is replicated on **PRX04**.
+Version 3 of prx.org is a **Rails 2** application that runs on **PRX01** and **PRX04** hosted with **Contegix**. It runs off a MySQL database that is also hosted on **PRX01**, which is replicated on **PRX04** and **AWS RDS**.
 
 Amazon **S3** is used to for user audio (and some other assets, like user images). **CloudFront** is used as a CDN for static site assets, like CSS and Javascript. **SQS** is used for queueing background tasks.
 
 The prx.org v3 Rails app relies on **Fixer** for a number of things. Jobs are sent to Fixer to validate and encode user audio. Sub-auto delivery scheduling is handled by v3, but the deliveries themselves (pushing to stations' FTP servers) are processes by Fixer. 
 
-# PRX.org (version 4)
+# publish.prx.org
 
-The newest version of prx.org is a frontend-only **AngularJS** app. During deployment it is compiled down to files which can be served statically. The compilation and hosting are both handled by **PRX04** though **Contegix**.
+The version 4 of prx.org is a frontend-only **AngularJS** app. During deployment it is compiled down to files which can be served statically. The compilation and hosting are both handled by **PRX04** though **Contegix**.
 
 The frontend relies on several other services, including: **cms.prx.org**, **id.prx.org**, and **upload.prx.org**.
+
+# beta.prx.org
+
+**AngularJS** app that will be replaced by **listen.prx.org**.
 
 # cms.prx.org
 
 cms.prx.org is the primary API for PRX user content. It is used to power **prx.org (v4)**, and integrates with **id.prx.org**, **feeder.prx.org**, and **fixer.prx.org** to handle various secondary functions.
 
-CMS is **Rails 4** app that runs on **PRX04** through **Contegix**. It shares a **MySQL** database with v3, but is currently in read-only mode running off the **PRX04** replication.
+CMS is **Rails 4** app that runs on **AWS ECS**. It shares a **MySQL** database with exchange.prx.org, but is currently in read-only mode running off the **AWS RDS** replication.
 
 # id.prx.org
 
 All aspects of authentication and authorization across PRX properties are being moved into the id.prx.org service. It is based on signed **JSON Web Tokens** that encapsulate various claims about users' abilities in a given app for a given resource.
 
-The service is a **Rails 4** app that runs on **PRX04** with **Contegix**.
+The service is a **Rails 4** app that runs on **AWS ECS**.
 
 # upload.prx.org
 
