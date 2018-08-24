@@ -67,7 +67,12 @@ consider developing/testing via Docker whenever possible, since it gives you an
 environment identical to production.
 
 For local Docker development, we often use
-[dinghy](https://github.com/codekitchen/dinghy). 
+[dinghy](https://github.com/codekitchen/dinghy). When setting up dinghy:
+
+  - Ensure there is adequate disk space, memory, processors assigned to
+    your virtual machine.
+  - Use the built in dinghy proxy and `/etc/hosts` to achieve
+    `*.prx.docker` hostnames.
 
 ### puma-dev
 
