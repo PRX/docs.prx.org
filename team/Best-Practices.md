@@ -66,17 +66,24 @@ Most PRX projects include a `Dockerfile` and `docker-compose.yml`.  You should
 consider developing/testing via Docker whenever possible, since it gives you an
 environment identical to production.
 
-For local Docker development, we often use [dinghy](https://github.com/codekitchen/dinghy).
+For local Docker development, we often use
+[dinghy](https://github.com/codekitchen/dinghy). When setting up dinghy:
+
+  - Ensure there is adequate disk space, memory, processors assigned to
+    your virtual machine.
+  - Use the built in dinghy proxy and `/etc/hosts` to achieve
+    `*.prx.docker` hostnames.
+
+### puma-dev
+
+If you are not using Docker, some developers use
+[puma-dev](https://github.com/puma/puma-dev) to run web applications and
+services locally.
 
 ### rbenv
 
 We use rbenv to easily switch between versions of ruby for different apps.
 Each web app/service should provide a `.ruby-version` file to work with `rbenv`.
-
-### pow & powder
-
-If you are not using Docker, some developers use [pow](http://pow.cx/) to run web applications and services locally.
-Since the `.dev` TLD no longer works with pow, so also consider [puma-dev](https://github.com/puma/puma-dev).
 
 ## Upgrades
 
