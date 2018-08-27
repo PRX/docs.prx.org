@@ -15,4 +15,13 @@ PRX develops digital products in support of our public media customers.
 * [Sprints](Sprints.md)
 * [Testing](User-testing.md)
 
-## Things to Do
+## Internal Documentation
+
+Head on over to our [Internal
+Documentation](https://github.com/PRX/internal/README.md) to see various
+guides to interesting topics, as well as retrospective documentation and
+helpful bash scripts.
+
+Of special note is the adjunct internal [guide to new
+employees](https://github.com/PRX/internal/blob/master/guides/new_employee.md).
+
