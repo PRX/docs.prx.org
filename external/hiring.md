@@ -20,7 +20,6 @@ be more inclusive and transparent to candidates.
       - Async code challenge
       - An OSS pull request
       - Something they've already built
-      - https://eng-hiring.18f.gov/pre-work/
       - ...
     - To be respectful of your time we're trying to get each candidate to spend no more than 2hrs on this task
     - You should be prepared to run/edit your project at the interview
