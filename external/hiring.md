@@ -19,7 +19,7 @@ be more inclusive and transparent to candidates.
     - Could be:
       - Async code challenge
       - An OSS pull request
-      - Something they've already built
+      - Something you've already built
       - ...
     - To be respectful of your time we're trying to get each candidate to spend no more than 2hrs on this task
     - You should be prepared to run/edit your project at the interview
