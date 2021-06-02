@@ -19,10 +19,10 @@ be more inclusive and transparent to candidates.
     - Could be:
       - Async code challenge
       - An OSS pull request
-      - Something they've already built
-      - ...
+      - Something you've already built
+      - something else
     - To be respectful of your time we're trying to get each candidate to spend no more than 2hrs on this task
-    - You should be prepared to run/edit your project at the interview
+    - you should be prepared to run, walk us through, and discuss your project
 4. Technical interview
     - ~55 minutes with 2+ **Tech Team** members
     - You'll get to tell us all about your technical skills in this interview
