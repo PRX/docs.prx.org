@@ -15,22 +15,27 @@ be more inclusive and transparent to candidates.
     - We'll give you a high level description of PRX, team and role
     - You'll get a chance to tell us about your background and experience
 3. Technical venture
-    - We'll work with you to pick something that best highlights your work and experience
-    - Could be:
-      - Async code challenge
-      - An OSS pull request
+    - Pick a feature to implement that highlights your skills and experience. Could be:
+      - One of our [code-ventures](https://github.com/PRX/code-ventures) challenges
+      - An OSS or personal project feature/bug
       - Something you've already built
-      - something else
-    - To be respectful of your time we're trying to get each candidate to spend no more than 2hrs on this task
-    - you should be prepared to run, walk us through, and discuss your project
+    - Let us know what you've decided to work on, and we'll make sure that makes sense for this process
+      - If you picked our `code-ventures`, we'll create a private repo for you
+      - Otherwise, just make sure we have access to see your code
+    - Spend **no more than 2 hours** implementing some or all of the feature
+    - Open a pull request containing your changes
+    - Send us a link to your pull request, and a few 1-hour blocks of time you're available in the next ~week for step (4)
 4. Technical interview
     - ~55 minutes with 2+ **Tech Team** members
-    - You'll get to tell us all about your technical skills in this interview
+    - You should be prepared to run, walk us through, and discuss your venture
+      - Your pull request is kind of a springboard for talking software-development in general
     - We'll also ask you questions!
       - These questions will be routed in our human and empathy centered process
-      - May involve some paired programming
-      - Will NOT be gotchas or other inteview negging.  
-      - We want to know who you are at your best, not your worst.
+      - We'll weigh tradeoffs, and talk through how we might alter the code to handle edge cases
+      - May involve a bit of pairing, with a PRXer doing the typing
+      - There will NOT be gotchas or other inteview negging
+      - We want to know who you are at your best, not your worst
+    - And you'll get to tell us all about your technical skills in this interview
 5. Untechnical interview
     - ~25 minutes with 2+ **PRX Hiring Team** members
     - We collaborate with our clients and the rest of the company frequently.  So we want to hear what they think of you!
